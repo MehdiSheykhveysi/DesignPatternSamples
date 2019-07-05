@@ -1,0 +1,25 @@
+﻿Take advantage of the Decorator design pattern to add extensibility either dynamically or statically to your application
+Design patterns are solutions to recurring problems and complexities in software design and are classified into three distinct categories: creational, structural, and behavioral.
+
+The Decorator design pattern is a structural pattern and can be used to add functionality to an object dynamically sans the need of modifying the structure of the object.
+In essence, you can leverage the Decorator pattern to attach functionality or 
+behavior to an object dynamically or statically sans the need to altering the object's structure.
+
+Note that the Decorator design pattern follows the Open Closed Principle, one of the SOLID principles.
+Incidentally, the Open Closed Principle is used to design classes that are open for extensions but closed for modifications.
+
+A bit of code
+
+In this section we will explore how we can implement the Decorator design pattern in C#. The participants in a typical implementation of the Decorator design pattern include:
+
+     Component -- this represents the base type of the actual or the concrete type
+    Concrete Component -- this represents the concrete type that extends the base component. Note that the additional responsibilities or functionalities are added in this type.
+    Decorator -- this represents a reference to a component. The dynamic functionalities are added in this type.
+
+Now, let's consider the following class.
+
+Note that when using the Decorator design pattern, you extend the behavior of an existing class but it doesn't necessarily mean that you have to use abstract types -- the types may or may not be abstract. 
+You can also implement the Decorator design pattern using interfaces, or even by using methods that are virtual in your concrete classes. 
+In essence, you are not constrained to use only abstract classes when implementing the Decorator design pattern. We are using an abstract class here just for the sake of simplicity.
+
+The EmployeeConcrete class extends the Employee class and adds additional properties to it. Here's how this class would look like.
