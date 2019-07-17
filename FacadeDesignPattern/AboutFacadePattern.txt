@@ -1,0 +1,29 @@
+﻿The Facade pattern is a simple structure laid over a more complex structure.The idea is that 
+if you don't want other code accessing the complex bits of a class or process, you hide those bits by covering them with a Facade.
+The Participants
+
+    The Subsystems are any classes or objects which implement functionality but can be "wrapped" or "covered" by the Facade to simplify an interface.
+    The Facade is the layer of abstraction above the Subsystems, and knows which Subsystem to delegate appropriate work to.
+To demonstrate how we use the Facade pattern, let's think about a restaurant.
+
+In most kitchens, the work area is divided into sections. For this post, we'll assume that our kitchen is divided into three areas:
+Hot Prep, where hot dishes like meats and pasta are made; Cold Prep, where cold dishes like salads and desserts are made; and the Bar,
+where drinks are prepared.
+
+If you are a patron at this restaurant and you sit down at a booth, do you care what part of your meal is made at what section of the restaurant?
+Of course not. There is a natural layer of abstraction in place: the server.
+The server knows where to place each order and where to pick those parts of the order up from.
+We'll model this relationship to demonstrate how the Facade pattern can simplify the structure of our code.
+Will I Ever Need This Pattern?
+
+All the damn time. Seriously, the Facade pattern is so general that it applies to almost every major app I've worked on,
+especially those where I couldn't refactor or modify pieces of said apps for various reasons.
+Summary
+
+The Facade pattern is a simple (or at least simpler) overlay on top of a group of more complex subsystems.
+The Facade knows which Subsystem to direct different kinds of work toward. And it is really, really common,
+so it's one of the patterns we should know thoroughly.
+
+As always, I like to provide code with my tutorials, so the repository for this pattern is over on GitHub and contains all of the sample code used here.
+
+Happy Coding!
