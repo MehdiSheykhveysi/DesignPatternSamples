@@ -1,6 +1,5 @@
 ﻿using ProxyPattern.Domain;
 using ProxyPattern.Repository;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -14,7 +13,6 @@ namespace ProxyPattern.Infrastructure.Data
         {
             _context = context;
         }
-
 
         public void Add(Person person)
         {

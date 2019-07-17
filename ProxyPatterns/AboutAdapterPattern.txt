@@ -1,0 +1,46 @@
+﻿What is Adapter Design Pattern?
+
+The Adapter Pattern is a software design pattern that attempts to reconcile the differences between two otherwise-incompatible interfaces.
+This pattern is especially useful when attempting to adapt to an interface which cannot be refactored.
+
+When you have a class that needs to utilize a particular interface, and you have a library that includes the functionality you need,
+but it doesn’t use the interface that you require. You can achieve the reuse of that library’s code by creating an Adapter class.
+This adapter class sits between your client code, and the code that’s in this library, 
+and adapts one interface to the other. The Adapter design pattern is one of the most common, 
+and most useful patterns available to us as software developers.
+
+The Client needs some of the logic that exists within the Adaptee.
+Specifically, there is this AdaptedOperation that has the code that the Client wants to be able to utilize.
+Unfortunately, the Client has been written in such a way that it cannot directly call this AdaptedOperation 
+because its interface is not the one that the Client expects. This is where the Adapter Pattern comes into play.
+
+First,
+
+The Adapter interface is created, exposing an Operation that has the interface the Client expects.
+
+Next,
+
+For each different implementation required, at a minimum, one, its different ConcreteAdapter is created that takes that Operation 
+and implements it, such that that code calls the AdaptedOperation.
+In this way, the Client will now be able to call the Operation on the ConcreteAdapter, 
+which in turn will call the AdaptedOperation on the Adaptee.
+
+The Client really wants to use the Adaptee directly, but unfortunately it can’t due to the incompatible interface. 
+The Adapter Pattern is simply allowing us to achieve this despite this incompatibility.
+
+
+Where To Apply Adapter Pattern?
+
+You should consider using the Adapter Pattern whenever you want to use an existing class’s functionality,
+but its interface is not the one that you require.
+
+Another scenario, if you’re trying to create reusable code, and you don’t want to tie it too tightly to a particular implementation,
+you should use some kind of an Adapter interface as what you’re code depends on,
+so that future clients could implement their own version of that Adapter and still make use of your code.
+
+You’ll also find the Adapter Pattern useful if there are several existing implementations of code that you want to be able to use,
+and it’s impractical to adapt each of their interfaces by sub-classing everyone. By implementing the Adapter Pattern,
+and just writing an Adapter for each of these subclasses, for instance, maybe you have a Data Access class, one for SQL Server,
+another for Oracle, another for DB2, you would be able to create a Data Adapter,
+and then create just the Adapter classes for each of those different implementations rather than trying to change those implementations
+directly to expose the interface that you require.
