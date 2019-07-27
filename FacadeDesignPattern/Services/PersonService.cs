@@ -13,7 +13,7 @@ namespace FacadeDesignPattern.Services
         public PersonService(IMapperFacade mapperFacade)
         {
             this._mapperFacade = mapperFacade;
-            personRepository = new PersonRepository();
+           // personRepository = new PersonRepository();
         }
         public PersonDTO GetPerson()
         {
