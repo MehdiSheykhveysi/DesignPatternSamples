@@ -1,0 +1,37 @@
+﻿According to GoF definition, mediator pattern defines an object that encapsulates how a set of objects interact.
+Mediator promotes loose coupling by keeping objects from referring to each other explicitly, and it lets us vary their interaction 
+independently.
+
+Mediator is a behavioral design pattern and one of other 23 patterns discussed by GoF
+
+1. When to use mediator design pattern
+
+Mediator helps in establishing loosely coupled communication between objects and helps in reducing the direct references to each other.
+This helps in minimizing the complexity of dependency management and communications among participating objects.
+Mediator helps to facilitate the interaction between objects in a manner in that objects are not aware of the existence of other objects.
+Objects depend only on a single mediator class instead of being coupled to dozens of other objects.
+
+During designing a solution to a problem, if you encounter a situation where multiple objects need to interact with each other to process the request,
+but direct communication may create a complex system, you can consider using mediator pattern.
+
+The pattern lets you extract all the relationships between classes into a separate class, isolating any changes to a specific component 
+from the rest of the components.
+
+2. Real world example of mediator pattern
+
+good example of mediator pattern is a chat application. In a chat application we can have several participants.
+It’s not a good idea to connect each participant to all the others because the number of connections would be really high.
+The best solution is to have a hub where all participants will connect; this hub is just the mediator class.
+
+Imagine that we need to develop a flight simulator. Our flight simulator will have base artifacts, like airport and aircraft. 
+An aircraft can take off from the airport, fly in the sky and land on the airport.
+
+Imagine a scenario when one particular aircraft is landing on the airport: how can that aircraft be sure that the other aircrafts are
+not trying to land on the same airport at the same time? It is obvious that our aircraft can't talk to each 
+and every aircraft which is currently approaching the airport.
+
+A better approach would be to introduce a mediator, which is a "man in the middle",
+meaning that all the aircrafts will communicate only with the mediator. The task of ensuring the safe operations of the aircrafts
+belongs to air traffic controllers, who are mediators. They must coordinate the movements of all the aircrafts, keep them at safe
+distances from each other, direct them during takeoff and landing, direct them around bad weather and ensure that the air traffic
+flows smoothly with minimal delays.

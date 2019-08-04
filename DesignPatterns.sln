@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebDecoratorPattern", "WebD
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FacadeDesignPattern", "FacadeDesignPattern\FacadeDesignPattern.csproj", "{75D9FE38-366F-41C9-8AE5-21543EB4B572}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebFactoryPattern", "WebFactiryPattern\WebFactoryPattern.csproj", "{91E0664C-4146-41E7-AEE9-3AB22E25AC8E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebFactoryPattern", "WebFactiryPattern\WebFactoryPattern.csproj", "{91E0664C-4146-41E7-AEE9-3AB22E25AC8E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MediatorPatternwithChatRoom", "MediatorPatternwithHangfire\MediatorPatternwithChatRoom.csproj", "{AF876E18-AB92-4AE6-BF59-8B0B7098E24E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{91E0664C-4146-41E7-AEE9-3AB22E25AC8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{91E0664C-4146-41E7-AEE9-3AB22E25AC8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{91E0664C-4146-41E7-AEE9-3AB22E25AC8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF876E18-AB92-4AE6-BF59-8B0B7098E24E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF876E18-AB92-4AE6-BF59-8B0B7098E24E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF876E18-AB92-4AE6-BF59-8B0B7098E24E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF876E18-AB92-4AE6-BF59-8B0B7098E24E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
