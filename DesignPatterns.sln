@@ -13,6 +13,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebFactoryPattern", "WebFac
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MediatorPatternwithChatRoom", "MediatorPatternwithHangfire\MediatorPatternwithChatRoom.csproj", "{AF876E18-AB92-4AE6-BF59-8B0B7098E24E}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MessagePackApp", "MessagePackApp\MessagePackApp.csproj", "{3780CAFA-1F2A-417F-8630-394BC2AF43F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpecificationPattern", "SpecificationPattern\SpecificationPattern.csproj", "{BEB80AA7-C85E-48EE-A9AE-C78DDD562C37}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{AF876E18-AB92-4AE6-BF59-8B0B7098E24E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AF876E18-AB92-4AE6-BF59-8B0B7098E24E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AF876E18-AB92-4AE6-BF59-8B0B7098E24E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3780CAFA-1F2A-417F-8630-394BC2AF43F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3780CAFA-1F2A-417F-8630-394BC2AF43F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3780CAFA-1F2A-417F-8630-394BC2AF43F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3780CAFA-1F2A-417F-8630-394BC2AF43F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEB80AA7-C85E-48EE-A9AE-C78DDD562C37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEB80AA7-C85E-48EE-A9AE-C78DDD562C37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEB80AA7-C85E-48EE-A9AE-C78DDD562C37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEB80AA7-C85E-48EE-A9AE-C78DDD562C37}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
